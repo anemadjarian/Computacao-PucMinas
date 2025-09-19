@@ -6,7 +6,7 @@ Este repositório reúne os materiais, exercícios e projetos desenvolvidos dura
 
 ## 📘 Sobre
 
-💻 **Exercícios** 
+💻 **Exercícios**  
 📚 **Trabalhos**  
 📝 **Provas**  
 
