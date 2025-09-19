@@ -1,29 +1,18 @@
-# 🧠 Exercícios em Java
+# 🧠 Exercícios Reaizados
 
-Este repositório reúne os exercícios e projetos desenvolvidos na linguagem JAVA durante a graduação.
-
----
-
-## 📘 Sobre a Oficina
-
-As atividades são propostas por professores da PUC Minas ou selecionadas a partir de plataformas como Codeforces e Beecrowd.
-
-📌 **Nome:** Exercícios JAVA  
-🏫 **Tipo:** Atividades  
+Este repositório reúne os materiais, exercícios e projetos desenvolvidos durante o 2º período da graduação.
 
 ---
 
-## 📚 Conteúdos Abordados Até o Momento
+## 📘 Sobre
 
-- Estrutura de repetição
-- Condicionais
-- Estruturas de Dados Lineares
-- Ordenação
-- Pesquisa
+💻 **Exercícios** 
+📚 **Trabalhos**  
+📝 **Provas**  
 
 ---
 
 ## 🛠️ Tecnologias Utilizadas
 
-- Linguagem: Java
+- Linguagem: Java, C
 - IDE: VSCode
