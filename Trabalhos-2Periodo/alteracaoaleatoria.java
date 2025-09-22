@@ -1,3 +1,23 @@
+/*
+Crie um método iterativo que recebe uma string, sorteia duas letras minúsculas aleatórias (código ASCII >= 'a' e <= 'z'), 
+substitui todas as ocorrências da primeira letra na string pela segunda e retorna a string com as alterações efetuadas.
+
+Na saída padrão, para cada linha de entrada, execute o método desenvolvido nesta questão e mostre a string retornada como 
+uma linha de saída.
+
+Abaixo, observamos um exemplo de entrada supondo que para a primeira linha as letras sorteadas foram o a e o q. Para a 
+segunda linha, foram o e e o k.
+
+Entrada:
+o rato roeu a roupa do rei de roma
+e qwe qwe qwe ewq ewq ewq
+FIM
+
+Saída
+o rqto roeu q roupq do rei de romq
+k qwk qwk qwk kwq kwq kwq
+*/
+
 import java.util.*;
 public class alteracaoaleatoria{
     public static String alteracao(String str, char a, char b){

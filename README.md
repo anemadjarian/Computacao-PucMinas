@@ -1,6 +1,6 @@
 # 🧠 Exercícios Reaizados
 
-Este repositório reúne os materiais, exercícios e projetos desenvolvidos durante o 2º período da graduação.
+Este repositório reúne os materiais, exercícios e projetos desenvolvidos durante a graduação.
 
 ---
 
