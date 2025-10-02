@@ -1,3 +1,4 @@
+package P1;
 /*
 Todo Natal o bom velhinho consegue ir em todas as casas do mundo e deixar presentes para as crianças que foram 
 boazinhas ao longo do ano, mas isso só é possível por causa do seu saco mágico de presentes. Seria impossível para o 
@@ -28,7 +29,9 @@ ou a mensagem "EMPTY" para as operações "MIN" e "POP" quando a pilha estiver v
 
 import java.util.*;
 
-public class MenordaPilha {
+import MyIO;
+
+public class MenorDaPilha {
     public static void main(String[] args){
         int n = MyIO.readInt();
         int[] pilha;

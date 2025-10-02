@@ -5,7 +5,7 @@ Destaca-se que uma linha de entrada pode ter caracteres não letras.
 */
 
 import java.util.*;
-public class palindromo {
+public class Palindromo {
     public static boolean Pali (String str){
         String str2="";
         int j=str.length()-1; // j é igual a ultima posição do array (tamanho da string - 1)

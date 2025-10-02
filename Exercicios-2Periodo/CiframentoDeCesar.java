@@ -11,7 +11,7 @@ Neste exercício, suponha a chave de ciframento três. Na saída padrão, para c
 a mensagem criptografada.
 */
 
-public class ciframentodecesar {
+public class CiframentoDeCesar {
     public static String codigoString(String str){
     String str2 = "";
     for(int i=0; i<str.length(); i++){

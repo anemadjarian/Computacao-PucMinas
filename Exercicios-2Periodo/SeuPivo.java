@@ -1,6 +1,6 @@
 import java.util.*;
 import java.util.Random;
-public class seupivo {
+public class SeuPivo {
 
     public static void preencheRandom(int[] array, int tamanho){
         Random vet = new Random();

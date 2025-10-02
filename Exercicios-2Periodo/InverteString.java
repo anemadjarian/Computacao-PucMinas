@@ -5,7 +5,7 @@ Por exemplo, se a entrada for abcde, a saída deve ser edcba.
  */
 
 import java.util.*;
-public class invertestring{
+public class InverteString{
     public static String inversao(String str){
         String str2= "";
         for(int i=(str.length()-1); i>=0; i--){

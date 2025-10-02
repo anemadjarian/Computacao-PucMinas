@@ -14,7 +14,7 @@ necessárias para se chegar do grid de largada ao grid de chegada.
 */
 
 import java.util.*;
-public class grid{
+public class Grid{
 	public static void preencherVetor(int nCarros, int[] carrosPosicao, Scanner sc){
 		for(int i=0; i<nCarros; i++){
 			carrosPosicao[i] = sc.nextInt();

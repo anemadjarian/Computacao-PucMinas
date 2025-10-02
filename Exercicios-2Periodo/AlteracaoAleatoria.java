@@ -19,7 +19,7 @@ k qwk qwk qwk kwq kwq kwq
 */
 
 import java.util.*;
-public class alteracaoaleatoria{
+public class AlteracaoAleatoria{
     public static String alteracao(String str, char a, char b){
         String str2 = "";
         for(int i=0; i<str.length(); i++){
