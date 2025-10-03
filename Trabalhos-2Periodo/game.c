@@ -37,85 +37,30 @@ typedef struct Game {
 
 } Game;
 
-void transformaData(char *token, int cont, Game *jogo){
-    char dia[3], mes[3], ano[5];
+void transformDate(char *token, int cont, Game *jogo){
+    char dia[3]="01", mes[3]="01", ano[5];
 
-    if(token[7]!=','){
-        dia[0] = token[6];
-        dia[1] = token[7];
-        dia[2] = '\0';
-    } else{
-        dia[0] = '0';
-        dia[1] = token[6];
-        dia[2] = '\0';
+    char *virgula = strchr(token, ',');
+    if (virgula != NULL && (virgula - token) >= 3) {
+        // pega dois dígitos antes da vírgula
+        if (*(virgula-2) >= '0' && *(virgula-2) <= '9')
+            dia[0] = *(virgula-2);
+        if (*(virgula-1) >= '0' && *(virgula-1) <= '9')
+            dia[1] = *(virgula-1);
     }
 
-    if(token[1]=='J'){
-        if(token[2]=='a'){
-            mes[0]='0';
-            mes[1]='1';
-            mes[2] = '\0';
-        }
-        else if(token[3]=='n'){
-            mes[0]='0';
-            mes[1]='6';
-            mes[2] = '\0';
-        }
-        else if(token[3]=='l'){
-            mes[0]='0';
-            mes[1]='7';
-            mes[2] = '\0';
-        }
-    }
-    if(token[1]=='F'){
-        mes[0]='0';
-        mes[1]='2';
-        mes[2] = '\0';
-    }
-    if(token[1]=='M'){
-        if(token[3]=='r'){
-            mes[0]='0';
-            mes[1]='3';
-            mes[2] = '\0';
-        }
-        else if(token[3]=='y'){
-            mes[0]='0';
-            mes[1]='5';
-            mes[2] = '\0';
-        }
-    }
-    if(token[1]=='A'){
-        if(token[2]=='p'){
-            mes[0]='0';
-            mes[1]='4';
-            mes[2] = '\0';
-        }
-        else if(token[2]=='u'){
-            mes[0]='0';
-            mes[1]='8';
-            mes[2] = '\0';
-        }
-    }
-    if(token[1]=='S'){
-        mes[0]='0';
-        mes[1]='9';
-        mes[2] = '\0';
-    }
-    if(token[1]=='O'){
-        mes[0]='1';
-        mes[1]='0';
-        mes[2] = '\0';
-    }
-    if(token[1]=='N'){
-        mes[0]='1';
-        mes[1]='1';
-        mes[2] = '\0';
-    }
-    if(token[1]=='D'){
-        mes[0]='1';
-        mes[1]='2';
-        mes[2] = '\0';
-    }
+        if (strstr(token, "Jan")) strcpy(mes,"01");
+        else if (strstr(token,"Feb")) strcpy(mes,"02");
+        else if (strstr(token,"Mar")) strcpy(mes,"03");
+        else if (strstr(token,"Apr")) strcpy(mes,"04");
+        else if (strstr(token,"May")) strcpy(mes,"05");
+        else if (strstr(token,"Jun")) strcpy(mes,"06");
+        else if (strstr(token,"Jul")) strcpy(mes,"07");
+        else if (strstr(token,"Aug")) strcpy(mes,"08");
+        else if (strstr(token,"Sep")) strcpy(mes,"09");
+        else if (strstr(token,"Oct")) strcpy(mes,"10");
+        else if (strstr(token,"Nov")) strcpy(mes,"11");
+        else if (strstr(token,"Dec")) strcpy(mes,"12");
 
     int j=0;
     for(int i=8; i<12; i++){
@@ -124,20 +69,112 @@ void transformaData(char *token, int cont, Game *jogo){
     }
     ano[4]='\0';
 
-    char data[11];
-    data[0]=dia[0];
-    data[1]=dia[1];
-    data[2]='/';
-    data[3]=mes[0];
-    data[4]=mes[1];
-    data[5]='/';
-    data[6]=ano[0];
-    data[7]=ano[1];
-    data[8]=ano[2];
-    data[9]=ano[3];
-    data[10]='\0';
+    sprintf(jogo[cont].releaseDate, "%s/%s/%s", dia, mes, ano);
 
-    strcpy(jogo[cont].releaseDate, data);
+}
+
+void transformLanguage(char *token, int cont, Game *jogo){
+    int j = 0;
+    char *aux = strtok(token, "[]',"); // separa por [, ], ', ou ,
+    while (aux != NULL) {
+        if (strlen(aux) > 1) { // ignora vazio
+            strcpy(jogo[cont].supportedLanguages[j], aux);
+            j++;
+        }
+        aux = strtok(NULL, "[]',");
+    }
+    jogo[cont].qtdLanguages = j;
+}
+
+void transformPublichers(char *token, int cont, Game *jogo){
+    int j = 0;
+    char *aux = strtok(token, "[]\","); // separa por aspas, vírgula, []
+    while (aux != NULL) {
+        if (strlen(aux) > 1) { 
+            strcpy(jogo[cont].publishers[j], aux);
+            j++;
+        }
+        aux = strtok(NULL, "[]\",");
+    }
+    jogo[cont].qtdPublishers = j;
+}
+
+void transformDevelopers(char *token, int cont, Game *jogo) {
+    int j = 0;
+    char *aux = strtok(token, "[]\","); 
+    while (aux != NULL) {
+        if (strlen(aux) > 1) { 
+            strcpy(jogo[cont].developers[j], aux);
+            j++;
+        }
+        aux = strtok(NULL, "[]\",");
+    }
+    jogo[cont].qtdDevelopers = j;
+}
+
+void transformCategories(char *token, int cont, Game *jogo) {
+    int j = 0;
+    char *aux = strtok(token, "[]\","); 
+    while (aux != NULL) {
+        if (strlen(aux) > 1) { 
+            strcpy(jogo[cont].categories[j], aux);
+            j++;
+        }
+        aux = strtok(NULL, "[]\",");
+    }
+    jogo[cont].qtdCategories = j;
+}
+
+void transformGenres(char *token, int cont, Game *jogo) {
+    int j = 0;
+    char *aux = strtok(token, "[]\","); 
+    while (aux != NULL) {
+        if (strlen(aux) > 1) { 
+            strcpy(jogo[cont].genres[j], aux);
+            j++;
+        }
+        aux = strtok(NULL, "[]\",");
+    }
+    jogo[cont].qtdGenres = j;
+}
+
+void transformTags(char *token, int cont, Game *jogo) {
+    int j = 0;
+    char *aux = strtok(token, "[]\","); 
+    while (aux != NULL) {
+        if (strlen(aux) > 1) { 
+            strcpy(jogo[cont].tags[j], aux);
+            j++;
+        }
+        aux = strtok(NULL, "[]\",");
+    }
+    jogo[cont].qtdTags = j;
+}
+
+void cleanNumber(char *token, char *new) {
+    int j = 0;
+    for (int i = 0; token[i] != '\0'; i++) {
+        if ((token[i] >= '0' && token[i] <= '9') || token[i] == '.' || token[i] == ',') {
+            if (token[i] == ',') // troca vírgula por ponto
+                new[j++] = '.';
+            else
+                new[j++] = token[i];
+        }
+    }
+    new[j] = '\0';
+}
+
+void freeToPlay(char *token, int cont, Game *jogo){
+    if (token[0] == 'F') {
+        jogo[cont].price = 0.0; 
+    } else {
+        char new[20];
+        cleanNumber(token, new);
+        if (strlen(new) > 0)
+            jogo[cont].price = atof(new); 
+        else
+            jogo[cont].price = 0.0;
+    }
 }
 
 void preencheVetor(Game jogo[], char line[], int cont){
@@ -156,32 +193,70 @@ void preencheVetor(Game jogo[], char line[], int cont){
     
     token = strtok(NULL, ","); 
     if(token != NULL){ 
-        transformaData(token, cont, jogo);
+        transformDate(token, cont, jogo);
     } 
     
     token = strtok(NULL, ","); 
     if (token != NULL){ 
-        jogo[cont].estimatedOwners = atoi(token); 
+        char new[20];
+        cleanNumber(token, new);
+        jogo[cont].estimatedOwners = atoi(new);
     } 
 
     token = strtok(NULL, ","); 
     if (token != NULL){ 
-        jogo[cont].price = atof(token); 
+        freeToPlay(token, cont, jogo);
     }
 
     token = strtok(NULL, ","); 
     if (token != NULL){ 
-        jogo[cont].metacriticScore = atoi(token); 
-    } 
+        transformLanguage(token, cont, jogo);
+    }
+
+    token = strtok(NULL, ","); 
+    if (token != NULL){ 
+        jogo[cont].metacriticScore = atoi(token);
+    } else{
+        jogo[cont].metacriticScore = -1;
+    }
 
     token = strtok(NULL, ","); 
     if (token != NULL){ 
         jogo[cont].userScore = atof(token); 
+    } else{
+        jogo[cont].userScore = -1.0; 
     }
 
     token = strtok(NULL, ","); 
     if (token != NULL){ 
         jogo[cont].achievements = atoi(token); 
+    } else{
+        jogo[cont].achievements = 0;
+    }
+
+    token = strtok(NULL, ","); 
+    if(token != NULL){ 
+        transformPublichers(token, cont, jogo);
+    }
+
+    token = strtok(NULL, ","); 
+    if (token != NULL){ 
+        transformDevelopers(token, cont, jogo);
+    }
+
+    token = strtok(NULL, ","); 
+    if (token != NULL){ 
+        transformCategories(token, cont, jogo);
+    }
+
+    token = strtok(NULL, ","); 
+    if (token != NULL){ 
+        transformGenres(token, cont, jogo);
+    }
+
+    token = strtok(NULL, ","); 
+    if (token != NULL){ 
+        transformTags(token, cont, jogo);
     }
 }
 
