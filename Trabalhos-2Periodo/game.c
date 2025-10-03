@@ -260,6 +260,63 @@ void preencheVetor(Game jogo[], char line[], int cont){
     }
 }
 
+int pesquisaSequencial(Game *jogo, int n, int idPesquisa) {
+    for (int i = 0; i < n; i++) {
+        if (jogo[i].id == idPesquisa) {
+            return i;
+        }
+    }
+    return -1; // não encontrado
+}
+
+void printar(Game *jogo, int resp){
+    printf("=> %d ## ", jogo[resp].id);
+    printf("%s ## ", jogo[resp].name);
+    printf("%s ## ", jogo[resp].releaseDate);
+    printf("%d ## ", jogo[resp].estimatedOwners);
+    printf("%f ## ", jogo[resp].price);
+    
+    printf("[");
+    for(int i = 0; i < jogo[resp].qtdLanguages-1; i++){
+        printf("%s, ", jogo[resp].supportedLanguages[i]);
+    }
+    printf("%s] ## ", jogo[resp].supportedLanguages[jogo[resp].qtdLanguages-1]);
+
+    printf("%d ## ", jogo[resp].metacriticScore);
+    printf("%d ## ", jogo[resp].userScore);
+    printf("%d ## ", jogo[resp].achievements);
+
+    printf("[");
+    for(int i = 0; i < jogo[resp].qtdPublishers-1; i++){
+        printf("%s, ", jogo[resp].publishers[i]);
+    }
+    printf("%s] ## ", jogo[resp].publishers[jogo[resp].qtdPublishers-1]);
+
+    printf("[");
+    for(int i = 0; i < jogo[resp].qtdDevelopers-1; i++){
+        printf("%s, ", jogo[resp].developers[i]);
+    }
+    printf("%s] ## ", jogo[resp].developers[jogo[resp].qtdDevelopers-1]);
+
+    printf("[");
+    for(int i = 0; i < jogo[resp].qtdCategories-1; i++){
+        printf("%s, ", jogo[resp].categories[i]);
+    }
+    printf("%s] ## ", jogo[resp].categories[jogo[resp].qtdCategories-1]);
+
+    printf("[");
+    for(int i = 0; i < jogo[resp].qtdGenres-1; i++){
+        printf("%s, ", jogo[resp].genres[i]);
+    }
+    printf("%s] ## ", jogo[resp].genres[jogo[resp].qtdGenres-1]);
+
+    printf("[");
+    for(int i = 0; i < jogo[resp].qtdTags-1; i++){
+        printf("%s, ", jogo[resp].tags[i]);
+    }
+    printf("%s] ## ", jogo[resp].tags[jogo[resp].qtdTags-1]);
+}
+
 int main() {
     FILE *arq = fopen("games.csv", "r");
     if (arq==NULL) {
@@ -278,6 +335,27 @@ int main() {
         preencheVetor(jogo, line, cont);
         cont++;
     }
+
+    char idInput[50];
+int resp;
+
+fgets(idInput, sizeof(idInput), stdin);
+idInput[strcspn(idInput, "\n")] = '\0'; // remove \n, muda para /0
+
+    while(idInput[0]!='F' && idInput[1]!='I' && idInput[2]!='M' && idInput[3]!='\0'){
+        int idPesquisa = atoi(idInput);
+    resp = pesquisaSequencial(jogo, cont, idPesquisa);
+
+    if(resp != -1){
+        printar(jogo, resp);
+    } else{
+        printf("Jogo com ID %d nao encontrado.\n", idPesquisa);
+    }
+
+    fgets(idInput, sizeof(idInput), stdin);
+    idInput[strcspn(idInput, "\n")] = '\0';
+    }
+
     fclose(arq);
     return 0;
 }
