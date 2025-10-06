@@ -283,7 +283,7 @@ void printar(Game *jogo, int resp){
     printf("%s] ## ", jogo[resp].supportedLanguages[jogo[resp].qtdLanguages-1]);
 
     printf("%d ## ", jogo[resp].metacriticScore);
-    printf("%d ## ", jogo[resp].userScore);
+    printf("%f ## ", jogo[resp].userScore);
     printf("%d ## ", jogo[resp].achievements);
 
     printf("[");
@@ -337,23 +337,22 @@ int main() {
     }
 
     char idInput[50];
-int resp;
-
-fgets(idInput, sizeof(idInput), stdin);
-idInput[strcspn(idInput, "\n")] = '\0'; // remove \n, muda para /0
-
-    while(idInput[0]!='F' && idInput[1]!='I' && idInput[2]!='M' && idInput[3]!='\0'){
-        int idPesquisa = atoi(idInput);
-    resp = pesquisaSequencial(jogo, cont, idPesquisa);
-
-    if(resp != -1){
-        printar(jogo, resp);
-    } else{
-        printf("Jogo com ID %d nao encontrado.\n", idPesquisa);
-    }
-
+    int resp;
     fgets(idInput, sizeof(idInput), stdin);
-    idInput[strcspn(idInput, "\n")] = '\0';
+    idInput[strcspn(idInput, "\n")] = '\0'; // remove \n, muda para /0
+
+    while(strcmp(idInput, "FIM") != 0){
+            int idPesquisa = atoi(idInput);
+        resp = pesquisaSequencial(jogo, cont, idPesquisa);
+
+        if(resp != -1){
+            printar(jogo, resp);
+        } else{
+            printf("Jogo com ID %d nao encontrado.\n", idPesquisa);
+        }
+
+        fgets(idInput, sizeof(idInput), stdin);
+        idInput[strcspn(idInput, "\n")] = '\0';
     }
 
     fclose(arq);
