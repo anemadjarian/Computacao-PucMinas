@@ -8,14 +8,18 @@ O objetivo deste repositório é centralizar o aprendizado, registrar a evoluç�
 
 ## 📚 Disciplinas
 
-| Per | Disciplina | Feito |
-|:---:|:------:|
-| 1 | **Algoritmos e Estruturas de Dados I** | ✅ |
-| 1 | **Cálculo I** | ✅ |
-| 1 | **Desenvolvimento de Interfaces Web** | ✅ |
-| 1 | **Filosofia: Razão e Modernidade** | ✅ |
-| 1 | **Introdução à Computação (extensionista)** | ✅ |
-| 1 | **Lab. de Iniciação à Programação** | ✅ |
-| 1 | **Trabalho Interdisciplinar I: Front-end** | ✅ |
-| 2 | **Algoritmos e Estruturas de Dados II** | ⏳ |
-| 2 | **Arquitetura de Computadores I** | ⏳ |
+| Período | Disciplina | ID | Feito |
+|:-------:|:-------------------------------------------|:------:|:------:|
+| 1 | **Algoritmos e Estruturas de Dados I** | AEDs1 | ✅ |
+| 1 | **Cálculo I** | C1 | ✅ |
+| 1 | **Desenvolvimento de Interfaces Web** | DIW | ✅ |
+| 1 | **Filosofia: Razão e Modernidade** | --- | ✅ |
+| 1 | **Introdução à Computação** | IC | ✅ |
+| 1 | **Lab. de Iniciação à Programação** | LIP | ✅ |
+| 1 | **Trabalho Interdisciplinar I: Front-end** | TI1 | ✅ |
+| 2 | **Algoritmos e Estruturas de Dados II** | AEDs2 | ⏳ |
+| 2 | **Arquitetura de Computadores I** | AC1 | ⏳ |
+| 2 | **Cultura Religiosa: Fenômeno Religioso** | --- | ⏳ |
+| 2 | **Engenharia de Software I** | ES1 | ⏳ |
+| 2 | **Introdução aos Sistemas Inteligentes** | SI | ⏳ |
+| 2 | **Trabalho Interdisciplinar II: Back-End** | TI2 | ⏳ |
