@@ -8,7 +8,7 @@ O objetivo deste repositório é centralizar o aprendizado, registrar a evoluç�
 
 ## 📚 Disciplinas
 
-| Período | Disciplina | Abrev. | Feito |
+| Período | Disciplina | Abrev. | Status |
 |:-------:|:-------------------------------------------|:------:|:------:|
 | 1 | **Algoritmos e Estruturas de Dados I** | AEDs1 | ✅ |
 | 1 | **Cálculo I** | --- | ✅ |
