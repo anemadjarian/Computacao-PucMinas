@@ -8,10 +8,10 @@ O objetivo deste repositório é centralizar o aprendizado, registrar a evoluç�
 
 ## 📚 Disciplinas
 
-| Período | Disciplina | ID | Feito |
+| Período | Disciplina | Abrev. | Feito |
 |:-------:|:-------------------------------------------|:------:|:------:|
 | 1 | **Algoritmos e Estruturas de Dados I** | AEDs1 | ✅ |
-| 1 | **Cálculo I** | C1 | ✅ |
+| 1 | **Cálculo I** | --- | ✅ |
 | 1 | **Desenvolvimento de Interfaces Web** | DIW | ✅ |
 | 1 | **Filosofia: Razão e Modernidade** | --- | ✅ |
 | 1 | **Introdução à Computação** | IC | ✅ |
