@@ -8,8 +8,8 @@ O objetivo deste repositório é centralizar o aprendizado, registrar a evoluç�
 
 ## 📚 Disciplinas
 
-| Per | Disciplina | Pré-Requisito / Co-requisito | Feito |
-|:---:|:-------------------------------------------|:------:|
+| Per | Disciplina | Feito |
+|:---:|:------:|
 | 1 | **Algoritmos e Estruturas de Dados I** | ✅ |
 | 1 | **Cálculo I** | ✅ |
 | 1 | **Desenvolvimento de Interfaces Web** | ✅ |
