@@ -6,16 +6,16 @@ O objetivo deste repositório é centralizar o aprendizado, registrar a evoluç�
 
 ---
 
-## 📚 Disciplinas do Curso de Ciência da Computação
+## 📚 Disciplinas
 
-| Per | Disciplina | Pré-Requisito / Co-requisito | ID | Feito |
-|:---:|:-------------------------------------------|:------------------------------------------|:----:|:------:|
-| 1 | **Algoritmos e Estruturas de Dados I** | --- | AEDs1 | ✅ |
-| 1 | **Cálculo I** | --- | C1 | ✅ |
-| 1 | **Desenvolvimento de Interfaces Web** | --- | DIW | ✅ |
-| 1 | **Filosofia: Razão e Modernidade** | --- | F:RM | ✅ |
-| 1 | **Introdução à Computação (extensionista)** | --- | IC | ✅ |
-| 1 | **Lab. de Iniciação à Programação** | --- | LIP | ✅ |
-| 1 | **Trabalho Interdisciplinar I: Front-end** | --- | TI1 | ✅ |
-| 2 | **Algoritmos e Estruturas de Dados II** | Algoritmos e Estruturas de Dados I | AEDs2 | ⏳ |
-| 2 | **Arquitetura de Computadores I** | Algoritmos e Estruturas de Dados I | AC1 | ⏳ |
+| Per | Disciplina | Pré-Requisito / Co-requisito | Feito |
+|:---:|:-------------------------------------------|:------:|
+| 1 | **Algoritmos e Estruturas de Dados I** | ✅ |
+| 1 | **Cálculo I** | ✅ |
+| 1 | **Desenvolvimento de Interfaces Web** | ✅ |
+| 1 | **Filosofia: Razão e Modernidade** | ✅ |
+| 1 | **Introdução à Computação (extensionista)** | ✅ |
+| 1 | **Lab. de Iniciação à Programação** | ✅ |
+| 1 | **Trabalho Interdisciplinar I: Front-end** | ✅ |
+| 2 | **Algoritmos e Estruturas de Dados II** | ⏳ |
+| 2 | **Arquitetura de Computadores I** | ⏳ |
