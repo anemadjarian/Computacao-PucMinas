@@ -69,7 +69,13 @@ class FilaFlexivel {
     }
 
     public int maiorElementoRec(){
-        return 0;
+        return maiorElementoRec(primeiro);
+    }
+    public int maiorElementoRec(Celula i){
+        if(i==null)
+            return 0;
+        int maior = maiorElementoRec(i.prox);
+        return (i.elemento > maior) ? i.elemento : maior;
     }
 
     public static void main(String[] args){
@@ -118,8 +124,6 @@ class FilaFlexivel {
                 System.out.println(e.getMessage());
             }
         }
-
-        System.out.println("Programa encerrado!");
         sc.close();
     }
 }

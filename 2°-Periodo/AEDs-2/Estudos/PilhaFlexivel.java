@@ -62,16 +62,6 @@ class PilhaFlexivel {
         return i.elemento + somarRec(i.prox);
     }
 
-    public int maiorElemento() {
-        int maior = 0;
-        for (Celula i = topo; i != null; i = i.prox) {
-            if (maior < i.elemento) {
-                maior = i.elemento;
-            }
-        }
-        return maior;
-    }
-
     public int maiorElementoRec() {
         return maiorElementoRec(topo);
     }
@@ -129,8 +119,6 @@ class PilhaFlexivel {
                 System.out.println(e.getMessage());
             }
         }
-
-        System.out.println("Programa encerrado!");
         sc.close();
     }
 }
