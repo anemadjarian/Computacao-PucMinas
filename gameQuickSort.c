@@ -346,37 +346,94 @@ void swap(Game *a, Game *b)
     numMovimentacoes += 3;
 }
 
-int comparar(Game a, Game b) {
-    int comp = strcmp(a.releaseDate, b.releaseDate);
-    if (comp != 0)
-        return comp; // se datas diferentes, usa a ordem da data
-    else
-        return (a.id - b.id); // se datas iguais, compara id
+void inverteDataParaComparacao(char *dataOriginal, char *dataInvertida) {
+    // dataOriginal esperada: DD/MM/AAAA
+    char dia[3], mes[3], ano[5];
+
+    // Extrai dia, mês e ano
+    strncpy(dia, dataOriginal, 2);
+    dia[2] = '\0';
+    strncpy(mes, dataOriginal + 3, 2);
+    mes[2] = '\0';
+    strncpy(ano, dataOriginal + 6, 4);
+    ano[4] = '\0';
+
+    // Monta data invertida AAAA/MM/DD
+    sprintf(dataInvertida, "%s/%s/%s", ano, mes, dia);
 }
+
+
+void inverteData(char *dataOriginal, char *dataNova) {
+    char dia[3] = "01", mes[3] = "01", ano[5];
+    char *virgula = strchr(dataOriginal, ','); // Corrigido
+
+    // DIA
+    if (virgula != NULL && (virgula - dataOriginal) >= 2) {
+        if (*(virgula - 2) >= '0' && *(virgula - 2) <= '9')
+            dia[0] = *(virgula - 2);
+        if (*(virgula - 1) >= '0' && *(virgula - 1) <= '9')
+            dia[1] = *(virgula - 1);
+    }
+
+    // MES
+    if (strstr(dataOriginal, "Jan")) strcpy(mes, "01");
+    else if (strstr(dataOriginal, "Feb")) strcpy(mes, "02");
+    else if (strstr(dataOriginal, "Mar")) strcpy(mes, "03");
+    else if (strstr(dataOriginal, "Apr")) strcpy(mes, "04");
+    else if (strstr(dataOriginal, "May")) strcpy(mes, "05");
+    else if (strstr(dataOriginal, "Jun")) strcpy(mes, "06");
+    else if (strstr(dataOriginal, "Jul")) strcpy(mes, "07");
+    else if (strstr(dataOriginal, "Aug")) strcpy(mes, "08");
+    else if (strstr(dataOriginal, "Sep")) strcpy(mes, "09");
+    else if (strstr(dataOriginal, "Oct")) strcpy(mes, "10");
+    else if (strstr(dataOriginal, "Nov")) strcpy(mes, "11");
+    else if (strstr(dataOriginal, "Dec")) strcpy(mes, "12");
+
+    // ANO
+    int len = strlen(dataOriginal);
+    if (len >= 4)
+        strcpy(ano, dataOriginal + len - 4);
+    else
+        strcpy(ano, "0000");
+
+    sprintf(dataNova, "%s/%s/%s", ano, mes, dia);
+}
+
+int comparar(Game a, Game b) {
+    char dataA[11], dataB[11];
+
+    inverteDataParaComparacao(a.releaseDate, dataA);
+    inverteDataParaComparacao(b.releaseDate, dataB);
+
+    int comp = strcmp(dataA, dataB);
+    if (comp != 0)
+        return comp; // ordena por data
+    else
+        return a.id - b.id; // se datas iguais, ordena por ID
+}
+
 
 // QuickSort
 void quickSort(Game *vetor, int inicio, int fim) {
     int i = inicio;
     int j = fim;
-    Game pivo = vetor[(inicio + fim) / 2]; // pivô é o jogo do meio
+    Game pivo = vetor[(inicio + fim) / 2];
 
     while (i <= j) {
-        // Compara data e id (ordem crescente)
         while (comparar(vetor[i], pivo) < 0) i++;
         while (comparar(vetor[j], pivo) > 0) j--;
 
-        numComparacoes++;
         if (i <= j) {
             swap(&vetor[i], &vetor[j]);
             i++;
             j--;
         }
     }
-    if (inicio < j)
-        quickSort(vetor, inicio, j);
-    if (i < fim)
-        quickSort(vetor, i, fim);
+
+    if (inicio < j) quickSort(vetor, inicio, j);
+    if (i < fim) quickSort(vetor, i, fim);
 }
+
 
 void printar(Game *jogo, int resp)
 {
