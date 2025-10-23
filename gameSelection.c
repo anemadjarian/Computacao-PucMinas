@@ -338,10 +338,6 @@ void preencheVetor(Game jogo[], char line[], int cont)
 //---------------------------------------------------------------
 // Funções Principais
 //---------------------------------------------------------------
-void pesquisaSequncial(Game jogo, int cont)
-{
-}
-
 void swap(Game *a, Game *b)
 {
     Game temp = *a;
@@ -447,7 +443,7 @@ int main()
     }
 
     // Arquivo CSV
-    FILE *arq = fopen("/tmp/games.csv", "r");
+    FILE *arq = fopen("games.csv", "r");
     if (!arq)
     {
         printf("Erro ao abrir o arquivo.\n");
