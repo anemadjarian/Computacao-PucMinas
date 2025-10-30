@@ -47,7 +47,7 @@ class No{
     }
 }
 
-class Agenda{
+/*class Agenda{
     No raiz;
 
     public Agenda(){
@@ -57,4 +57,4 @@ class Agenda{
     void inserir(Contato contato){
         if()
     }
-}
+}*/
