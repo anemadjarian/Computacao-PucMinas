@@ -1,129 +1,74 @@
 import java.util.*;
 class Celula{
-    int elemento;
-    Celula prox;
+    public int elemento;
+    public Celula prox;
 
-    public Celula() {
+    public Celula(){
         this(0);
     }
-    public Celula(int x){
-        this.elemento=x;
+
+    public Celula(int elemento){
+        this.elemento=elemento;
         this.prox=null;
     }
-
 }
-class FilaFlexivel {
-    private Celula primeiro, ultimo;
+public class FilaFlexivel {
+    Celula primeiro,ultimo;
 
     public FilaFlexivel(){
-        this.primeiro=new Celula();
-        this.ultimo=primeiro;
+        this.primeiro=this.ultimo=null;
     }
 
-    //Deixa a célula primeiro sempre vazia
-    public void inserir(int x){
-        ultimo.prox=new Celula(x);
-        ultimo=ultimo.prox;
-    }
-
-    /*
-     * tmp aponta para primeiro
-     * primeiro aponta para prox
-     * elemento = primeiro (segunda celula)
-     * tmp prox e tmp = null (priemira celula não aponta pra ninguem e tmp também não)
-     */
-    public int remover() throws Exception{
-        if(primeiro==ultimo){
-            throw new Exception("Erro");
+    void inserir(int x) {
+        Celula tmp = new Celula(x);
+        if (primeiro == null) {
+            primeiro = ultimo = tmp;
+        } else {
+            ultimo.prox = tmp;
+            ultimo = tmp;
         }
+    }
+    
+
+    int remover() throws Exception{
+        if(primeiro==null){
+            throw new Exception("Fila vazia");
+        }
+        int removido = primeiro.elemento;
         Celula tmp = primeiro;
         primeiro = primeiro.prox;
-        int elemento = primeiro.elemento;
         tmp.prox=null;
-        tmp = null;
-        return elemento;
+        tmp=null;
+        return removido;
     }
 
-    public void mostrar(){
-        for(Celula i=primeiro.prox; i!=null; i=i.prox){
+    void mostrar(){
+        for(Celula i=primeiro; i != null; i=i.prox){
             System.out.print(i.elemento + " ");
         }
         System.out.println();
     }
 
-    public int somar(){
-        int soma=0;
-        for(Celula i=primeiro; i!=null; i=i.prox){
-            soma+=i.elemento;
-        }
-        return soma;
-    }
-
-    public int somarRec(){
-        return somarRec(primeiro.prox);
-    }
-    public int somarRec(Celula i){
-        if(i==null)
-            return 0;
-        return i.elemento+somarRec(i.prox);
-    }
-
-    public int maiorElementoRec(){
-        return maiorElementoRec(primeiro);
-    }
-    public int maiorElementoRec(Celula i){
-        if(i==null)
-            return 0;
-        int maior = maiorElementoRec(i.prox);
-        return (i.elemento > maior) ? i.elemento : maior;
-    }
-
     public static void main(String[] args){
         Scanner sc = new Scanner(System.in);
         FilaFlexivel fila = new FilaFlexivel();
-        int n = 0;
 
-        while (n != 7) {
-            System.out.println("\n1- Inserir");
-            System.out.println("2- Remover");
-            System.out.println("3- Mostrar");
-            System.out.println("4- Somar");
-            System.out.println("5- Somar Recursivo");
-            System.out.println("6- Maior Elemento");
-            System.out.println("7- Sair");
-            n = sc.nextInt();
-
-            try {
-                switch (n) {
-                    case 1:
-                        System.out.print("Qual número deseja inserir? ");
-                        fila.inserir(sc.nextInt());
-                        break;
-                    case 2:
-                        System.out.println("Você removeu o: " + fila.remover());
-                        break;
-                    case 3:
-                        fila.mostrar();
-                        break;
-                    case 4:
-                        System.out.println("Soma dos elementos: " + fila.somar());
-                        break;
-                    case 5:
-                        System.out.println("Soma dos elementos (rec): " + fila.somarRec());
-                        break;
-                    case 6:
-                        System.out.println("Maior elemento (rec): " + fila.maiorElementoRec());
-                        break;
-                    case 7:
-                        System.out.println("Programa encerrado!");
-                        break;
-                    default:
-                        System.out.println("Opção inválida!");
+        int n = sc.nextInt();
+        for(int i=0; i<n; i++){
+            int cmd = sc.nextInt();
+            if(cmd==1){
+                int x = sc.nextInt();
+                fila.inserir(x);
+            } else if(cmd==2){
+                try{
+                    int removido=fila.remover();
+                    System.out.println("Removido: " + removido);
+                } catch(Exception e){
+                    System.out.println(e.getMessage());
                 }
-            } catch (Exception e) {
-                System.out.println(e.getMessage());
+            } else if(cmd==3){
+                fila.mostrar();
             }
         }
-        sc.close();
     }
 }
