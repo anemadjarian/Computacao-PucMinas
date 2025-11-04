@@ -21,4 +21,15 @@ class Celula{
 }
 
 public class MatrizFlexivel {
+    Celula inicio;
+    int linha, coluna;
+
+    public MatrizFlexivel(){
+        MatrizFlexivel(3,3);
+    }
+
+    public Matriz(int linha, int coluna){
+        this.linha=linha;
+        this.coluna=coluna;
+    }
 }
