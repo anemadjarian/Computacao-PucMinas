@@ -23,3 +23,5 @@ O objetivo deste repositório é centralizar o aprendizado, registrar a evoluç�
 | 2 | Engenharia de Software I | ES1 | ⏳ |
 | 2 | Introdução aos Sistemas Inteligentes | SI | ⏳ |
 | ***2*** | ***Trabalho Interdisciplinar II: Back-End*** | ***TI2*** | ⏳ |
+
+❗ Disciplinas em negrito possuem repositório próprio para armazenamento e organização da matéria.
