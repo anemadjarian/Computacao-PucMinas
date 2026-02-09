@@ -2,7 +2,6 @@
 
 Bem-vindo(a) ao meu repositório de **Ciência da Computação**!  
 Aqui estão reunidos **todos os códigos, documentos, exercícios, projetos e anotações** que produzi ao longo do curso.  
-O objetivo deste repositório é centralizar o aprendizado, registrar a evolução ao longo dos semestres e servir como referência futura para estudos e projetos pessoais.
 
 ---
 
