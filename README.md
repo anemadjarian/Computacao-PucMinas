@@ -7,10 +7,10 @@ Aqui estão reunidos **todos os códigos, documentos, exercícios, projetos e an
 
 ## 📚 Disciplinas
 
-| Período | Disciplina | Abrev. | Status |
+| Período | Disciplina | ID | Status |
 |:-------:|:-------------------------------------------|:------:|:------:|
 | ***1*** | ***Algoritmos e Estruturas de Dados I*** | ***AEDs1*** | ✅ |
-| 1 | Cálculo I | --- | ✅ |
+| 1 | Cálculo I | C1 | ✅ |
 | 1 | Desenvolvimento de Interfaces Web | DIW | ✅ |
 | 1 | Filosofia: Razão e Modernidade | --- | ✅ |
 | 1 | Introdução à Computação | IC | ✅ |
@@ -25,7 +25,7 @@ Aqui estão reunidos **todos os códigos, documentos, exercícios, projetos e an
 | 3 | Algoritmos e Estruturas de Dados III | AEDs3 | ⏳ |
 | 3 | Arquitetura de Computadores II | AC2 | ⏳ |
 | 3 | Banco de Dados | BD | ⏳ |
-| 3 | Cálculo II | --- | ⏳ |
+| 3 | Cálculo II | C2 | ⏳ |
 | 3 | Língua Brasileira de Sinais | --- | ⏳ |
 | 3 | Linguagens de Programação | LP | ⏳ |
 | 3 | Trabalho Interdisciplinar III | TI3 | ⏳ |
