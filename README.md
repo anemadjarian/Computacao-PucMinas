@@ -38,7 +38,7 @@ Aqui estão reunidos **todos os códigos, documentos, exercícios, projetos e an
 
 <details>
   <summary>3° Período</summary>
-  Em andamento...  
+  ⏳ Em andamento...  
   
   | Disciplina | ID |
   |:-------:|:-------------------------------------------:|
