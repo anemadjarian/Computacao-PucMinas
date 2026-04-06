@@ -9,6 +9,7 @@ Aqui estão reunidos **todos os códigos, documentos, exercícios, projetos e an
 
 <details>
   <summary>1° Período</summary>
+  
   | Disciplina | ID |
   |:-------:|:-------------------------------------------:|
   | Algoritmos e Estruturas de Dados I | AEDs1 |
@@ -18,6 +19,7 @@ Aqui estão reunidos **todos os códigos, documentos, exercícios, projetos e an
   | Introdução à Computação | IC |
   | Lab. de Iniciação à Programação | LIP |
   | Trabalho Interdisciplinar I: Front-end | TI1 |
+  
 </details>
 
 | Período | Disciplina | ID | Status |
