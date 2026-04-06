@@ -19,8 +19,11 @@ Aqui estão reunidos **todos os códigos, documentos, exercícios, projetos e an
   | Introdução à Computação | IC |
   | Lab. de Iniciação à Programação | LIP |
   | Trabalho Interdisciplinar I: Front-end | TI1 |
+  
+</details>
 
-  <summary>2° Período</summary>
+<details>
+<summary>2° Período</summary>
   
   | Disciplina | ID |
   |:-------:|:-------------------------------------------:|
@@ -31,6 +34,9 @@ Aqui estão reunidos **todos os códigos, documentos, exercícios, projetos e an
   | Introdução aos Sistemas Inteligentes | SI |
   | Trabalho Interdisciplinar II: Back-End | TI2 |
 
+</details>
+
+<details>
   <summary>3° Período</summary>
   Em andamento...  
   
@@ -43,7 +49,7 @@ Aqui estão reunidos **todos os códigos, documentos, exercícios, projetos e an
   | Língua Brasileira de Sinais | - |
   | Linguagens de Programação | LP |
   | Trabalho Interdisciplinar III: Pesquisa Aplicada | TI3 |
-  
-</details>
+
+  </details>
 
 ❗ Existem disciplinas cujo material está armazenado em repositórios próprios, outras cujo conteúdo está reunido neste repositório, e também aquelas para as quais não foi armazenado material.
