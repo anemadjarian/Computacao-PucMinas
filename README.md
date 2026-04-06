@@ -1,4 +1,4 @@
-# 🎓 Ciência da Computação — Repositório de Estudos
+# 🎓 Ciência da Computação
 
 Bem-vindo(a) ao meu repositório de **Ciência da Computação**!  
 Aqui estão reunidos **todos os códigos, documentos, exercícios, projetos e anotações** que produzi ao longo do curso.  
@@ -6,6 +6,17 @@ Aqui estão reunidos **todos os códigos, documentos, exercícios, projetos e an
 ---
 
 ## 📚 Disciplinas
+
+<details>
+  <summary>1° Período</summary>
+  Algoritmos e Estruturas de Dados I
+  Cálculo I
+  Desenvolvimento de Interfaces Web
+  Filosofia: Razão e Modernidade
+  Introdução à Computação
+  Lab. de Iniciação à Programação
+  Trabalho Interdisciplinar I: Front-end
+</details>
 
 | Período | Disciplina | ID | Status |
 |:-------:|:-------------------------------------------|:------:|:------:|
