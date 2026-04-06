@@ -9,13 +9,15 @@ Aqui estão reunidos **todos os códigos, documentos, exercícios, projetos e an
 
 <details>
   <summary>1° Período</summary>
-  Algoritmos e Estruturas de Dados I
-  Cálculo I
-  Desenvolvimento de Interfaces Web
-  Filosofia: Razão e Modernidade
-  Introdução à Computação
-  Lab. de Iniciação à Programação
-  Trabalho Interdisciplinar I: Front-end
+  | Disciplina | ID |
+  |:-------:|:-------------------------------------------:|
+  | Algoritmos e Estruturas de Dados I | AEDs1 |
+  | Cálculo I | C1 |
+  | Desenvolvimento de Interfaces Web | DIW |
+  | Filosofia: Razão e Modernidade | - |
+  | Introdução à Computação | IC |
+  | Lab. de Iniciação à Programação | LIP |
+  | Trabalho Interdisciplinar I: Front-end | TI1 |
 </details>
 
 | Período | Disciplina | ID | Status |
