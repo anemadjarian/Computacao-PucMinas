@@ -52,4 +52,3 @@ Aqui estão reunidos **todos os códigos, documentos, exercícios, projetos e an
 
   </details>
 
-❗ Existem disciplinas cujo material está armazenado em repositórios próprios, outras cujo conteúdo está reunido neste repositório, e também aquelas para as quais não foi armazenado material.
