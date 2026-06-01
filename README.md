@@ -6,19 +6,20 @@ Aqui estão reunidos **todos os códigos, documentos, exercícios, projetos e an
 ---
 
 ## 📚 Disciplinas
+As disciplinas destacadas em negrito possuem repositório próprio.  
 
 <details>
   <summary>1° Período</summary>
   
   | Disciplina | ID |
   |:-------:|:-------------------------------------------:|
-  | Algoritmos e Estruturas de Dados I | AEDs1 |
+  | ***Algoritmos e Estruturas de Dados I*** | ***AEDs1*** |
   | Cálculo I | C1 |
   | Desenvolvimento de Interfaces Web | DIW |
   | Filosofia: Razão e Modernidade | - |
   | Introdução à Computação | IC |
   | Lab. de Iniciação à Programação | LIP |
-  | Trabalho Interdisciplinar I: Front-end | TI1 |
+  | ***Trabalho Interdisciplinar I: Front-end*** | ***TI1*** |
   
 </details>
 
@@ -27,12 +28,12 @@ Aqui estão reunidos **todos os códigos, documentos, exercícios, projetos e an
   
   | Disciplina | ID |
   |:-------:|:-------------------------------------------:|
-  | Algoritmos e Estruturas de Dados II | AEDs2 |
+  | ***Algoritmos e Estruturas de Dados II*** | ***AEDs2*** |
   | Arquitetura de Computadores I | AC1 |
   | Cultura Religiosa: Fenômeno Religioso | - |
   | Engenharia de Software I | ES1 |
   | Introdução aos Sistemas Inteligentes | SI |
-  | Trabalho Interdisciplinar II: Back-End | TI2 |
+  | ***Trabalho Interdisciplinar II: Back-End*** | ***TI2*** |
 
 </details>
 
@@ -42,7 +43,7 @@ Aqui estão reunidos **todos os códigos, documentos, exercícios, projetos e an
   
   | Disciplina | ID |
   |:-------:|:-------------------------------------------:|
-  | Algoritmos e Estruturas de Dados III | AEDs3 |
+  | ***Algoritmos e Estruturas de Dados III*** | ***AEDs3*** |
   | Arquitetura de Computadores II | AC2 |
   | Banco de Dados | BD |
   | Cálculo II | C2 |
