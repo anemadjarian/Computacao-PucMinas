@@ -65,8 +65,3 @@ As disciplinas destacadas em negrito possuem repositório próprio.
   | Trab. Interdisciplinar IV: Aplicações Móveis | TI4 |
 
 </details>
-
----
-
-## 🎀 Autora
-[![Ane Madjarian](https://img.shields.io/badge/Ane%20Madjarian-F8BBD0?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/anemadjarian/)
