@@ -69,4 +69,4 @@ As disciplinas destacadas em negrito possuem repositório próprio.
 ---
 
 ## 🎀 Autora
-[(https://img.shields.io/badge/LinkedIn-Ane%20Madjarian-F8BBD0?style=for-the-badge&logo=linkedin)](https://www.linkedin.com/in/anemadjarian/)
+[![Ane Madjarian](https://img.shields.io/badge/Ane%20Madjarian-F8BBD0?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/anemadjarian/)
