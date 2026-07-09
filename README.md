@@ -1,11 +1,10 @@
 # 🎓 Ciência da Computação
 
-Bem-vindo(a) ao meu repositório de **Ciência da Computação**!  
-Aqui estão reunidos **todos os códigos, documentos, exercícios, projetos e anotações** que produzi ao longo do curso.  
+Nesse repositório estão reunidos **todos os códigos, documentos, exercícios, projetos e anotações** que produzi ao longo do curso.  
 
 ---
 
-## 📚 Disciplinas
+## ☕ Disciplinas
 As disciplinas destacadas em negrito possuem repositório próprio.  
 
 <details>
@@ -66,3 +65,8 @@ As disciplinas destacadas em negrito possuem repositório próprio.
   | Trab. Interdisciplinar IV: Aplicações Móveis | TI4 |
 
 </details>
+
+---
+
+## 🎀 Autora
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-Ane%20Madjarian-0A66C2?style=for-the-badge&logo=linkedin)](https://www.linkedin.com/in/anemadjarian/)
