@@ -39,7 +39,6 @@ As disciplinas destacadas em negrito possuem repositório próprio.
 
 <details>
   <summary>3° Período</summary>
-  ⏳ Em andamento...  
   
   | Disciplina | ID |
   |:-------:|:-------------------------------------------:|
@@ -51,5 +50,19 @@ As disciplinas destacadas em negrito possuem repositório próprio.
   | Linguagens de Programação | LP |
   | Trabalho Interdisciplinar III: Pesquisa Aplicada | TI3 |
 
-  </details>
+</details>
 
+<details>
+  <summary>4° Período</summary>
+  ⏳ Em andamento...  
+  
+  | Disciplina | ID |
+  |:-------:|:-------------------------------------------:|
+  | Estatística e Probabilidade | EP |
+  | Inteligência Artificial  | IA |
+  | Lab. de Desenvol. para Dispositivos Móveis | LDDM |
+  | Modelagem e Avaliação de Desempenho  | MAD |
+  | Teoria dos Grafos e Computabilidade | Grafos |
+  | Trab. Interdisciplinar IV: Aplicações Móveis | TI4 |
+
+</details>
