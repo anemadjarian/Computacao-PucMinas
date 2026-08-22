@@ -11,7 +11,7 @@ Projetos e estudos focados em paradigmas de programação, análise léxica e si
 
 ## 🚀 Repositórios Próprios
 ### Algoritmos e Estruturas de Dados III (AEDs3)
-[Clique aqui](https://github.com/anemadjarian/AEDs3.git)
+[Clique aqui](https://github.com/anemadjarian/AEDs3.git)  
 [Clique aqui](https://github.com/anemadjarian/Visualizer.git)
 ### Trabalho Interdisciplinar III: Back-End (TI3)
 [Clique aqui](https://github.com/anemadjarian/TI3-BurnoutEmUniversitarios.git)
