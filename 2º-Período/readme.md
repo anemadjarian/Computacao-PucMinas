@@ -14,3 +14,6 @@ Atividades focadas no estudo de dados, modelos estatísticos, inteligência arti
 [Clique aqui](https://github.com/anemadjarian/AEDs2.git)
 ### Trabalho Interdisciplinar II: Back-End (TI2)
 [Clique aqui](https://github.com/anemadjarian/TI2-GRWM.git)
+
+## 📅 Ano/Semestre Realizado
+- 2025/2
