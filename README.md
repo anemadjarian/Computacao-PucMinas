@@ -57,6 +57,7 @@ As disciplinas destacadas em negrito possuem repositório próprio.
   
   | Disciplina | ID |
   |:-------:|:-------------------------------------------:|
+  | Direito Cibernético | DC |
   | Estatística e Probabilidade | EP |
   | ***Inteligência Artificial***  | ***IA*** |
   | Lab. de Desenvol. para Dispositivos Móveis | LDDM |
