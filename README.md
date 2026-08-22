@@ -1,10 +1,10 @@
-# 🎓 Ciência da Computação
+# 🎀 Ciência da Computação
 
 Nesse repositório estão reunidos **todos os códigos, documentos, exercícios, projetos e anotações** que produzi ao longo do curso.  
 
 ---
 
-## ☕ Disciplinas
+## 📝 Disciplinas
 As disciplinas destacadas em negrito possuem repositório próprio.  
 
 <details>
@@ -47,7 +47,7 @@ As disciplinas destacadas em negrito possuem repositório próprio.
   | Cálculo II | C2 |
   | Língua Brasileira de Sinais | - |
   | Linguagens de Programação | LP |
-  | Trabalho Interdisciplinar III: Pesquisa Aplicada | TI3 |
+  | ***Trabalho Interdisciplinar III: Pesquisa Aplicada*** | ***TI3*** |
 
 </details>
 
@@ -58,10 +58,10 @@ As disciplinas destacadas em negrito possuem repositório próprio.
   | Disciplina | ID |
   |:-------:|:-------------------------------------------:|
   | Estatística e Probabilidade | EP |
-  | Inteligência Artificial  | IA |
+  | ***Inteligência Artificial***  | ***IA*** |
   | Lab. de Desenvol. para Dispositivos Móveis | LDDM |
   | Modelagem e Avaliação de Desempenho  | MAD |
   | Teoria dos Grafos e Computabilidade | Grafos |
-  | Trab. Interdisciplinar IV: Aplicações Móveis | TI4 |
+  | ***Trab. Interdisciplinar IV: Aplicações Móveis*** | ***TI4*** |
 
 </details>
