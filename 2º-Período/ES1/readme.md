@@ -1,4 +1,4 @@
-# Engenharia de Software
+# Engenharia de Software I
 Este repositório reúne os trabalhos desenvolvidos durante a disciplina de Engenharia de Software I.  
 O projeto principal foi desenvolvido ao longo de todo o semestre e teve como tema a análise, levantamento e especificação de um software para gerenciamento de uma transportadora.  
 
