@@ -14,3 +14,6 @@ Desenvolvimento da lógica de programação e domínio dos conceitos fundamentai
 [Clique aqui](https://github.com/anemadjarian/AEDs1.git)
 ### Trabalho Interdisciplinar I: Front-End (TI1)
 [Clique aqui](https://github.com/anemadjarian/TI1-LocalizeMe.git)
+
+## 📅 Ano/Semestre Realizado
+- 2025/1
