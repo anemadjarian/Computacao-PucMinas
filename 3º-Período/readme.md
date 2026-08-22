@@ -15,3 +15,6 @@ Projetos e estudos focados em paradigmas de programação, análise léxica e si
 [Clique aqui](https://github.com/anemadjarian/Visualizer.git)
 ### Trabalho Interdisciplinar III: Pesquisa Aplicada (TI3)
 [Clique aqui](https://github.com/anemadjarian/TI3-BurnoutEmUniversitarios.git)
+
+## 📅 Ano/Semestre Realizado
+- 2026/1
